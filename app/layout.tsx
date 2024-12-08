@@ -22,7 +22,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         />
       </head>
       <body className='w-screen flex justify-center'>
-        <div className='h-screen w-[600px] min-w-[320px] bg-black'>{children}</div>
         <LottoProvider initialData={data}>
           <div className='h-screen w-[600px] min-w-[320px] bg-black'>{children}</div>
         </LottoProvider>
